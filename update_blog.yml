@@ -6,7 +6,7 @@ on:
       branches:
         - main  # 또는 워크플로우를 트리거하고 싶은 브랜치 이름
   schedule:
-    - cron: '0 6 * * *'  
+    - cron: '12 6 * * *'  
 
 jobs:
   update_blog:
@@ -32,4 +32,4 @@ jobs:
         pip install feedparser gitpython
 
     - name: Run script
-      run: python scripts/update_blog.py
+      run: python update_blog.py
